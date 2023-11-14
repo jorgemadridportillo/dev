@@ -1,22 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Image } from "astro:assets";
-import donbolsas_full from "/src/images/donbolsas_full.png";
-import classiques from "/src/images/classiques.png";
-import topofor from "/src/images/topofor.png";
-import exfopino from "/src/images/exfopino.png";
-import aerorioja from "/src/images/aerorioja.png";
-import WebCard from "/src/components/WebCard.astro";
+import PortfolioCard from "/src/components/PortfolioCard.astro";
+
+import { portfolioData } from "/src/utils/getPortfolioFromId.js";
 ---
 
 <Layout title="Jorge Madrid Portillo Portfolio">
   <main>
-    <div class="grid md:grid-cols-2 grid-cols-1">
-      <WebCard image={donbolsas_full} alt="don bolsas web" />
-      <WebCard image={classiques} alt="classiques web" />
-      <WebCard image={topofor} alt="topofor web" />
-      <WebCard image={exfopino} alt="exfopino web" />
-      <WebCard image={aerorioja} alt="aerorioja web" />
+    <div class="grid md:grid-cols-2 grid-cols-1 h">
+      <PortfolioCard portfolio={portfolioData.donbolsas} />
+      <PortfolioCard portfolio={portfolioData.exfopino} />
+      <PortfolioCard portfolio={portfolioData.classiques} />
+      <PortfolioCard portfolio={portfolioData.aerorioja} />
+      <PortfolioCard portfolio={portfolioData.topofor} />
     </div>
   </main>
 </Layout>

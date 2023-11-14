@@ -1,16 +1,19 @@
 ---
 interface Props {
-  image: any;
-  alt: string;
+  portfolio: any;
 }
 
-const { image, alt } = Astro.props;
+import { getPortfolioFromId } from "/src/utils/getPortfolioFromId.js";
+
+const { portfolio } = Astro.props;
+const { imageSrc, alt, id } = getPortfolioFromId(portfolio.id);
+
 import { Image } from "astro:assets";
 import plus from "/src/images/icons/plus.svg";
 ---
 
-<div class="relative cursor-pointer group">
-  <Image class="h-full" src={image} alt={alt} />
+<div class="relative cursor-pointer group" id={id}>
+  <Image class="h-full" src={imageSrc} alt={alt} />
   <div
     class="bg-black h-full w-full absolute top-0 left-0 opacity-0 group-hover:opacity-50 transition-all"
   >
@@ -25,3 +28,9 @@ import plus from "/src/images/icons/plus.svg";
     </div>
   </div>
 </div>
+<script define:vars={{ id }}>
+  const card = document.querySelector("#" + id);
+  card.addEventListener("click", () => {
+    window.location.href = "/project/" + id;
+  });
+</script>

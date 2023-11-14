@@ -1,0 +1,32 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import {
+  getPortfolioFromId,
+  portfolioData,
+} from "/src/utils/getPortfolioFromId.js";
+
+export function getStaticPaths() {
+  return [
+    { params: { id: portfolioData.donbolsas.id } },
+    { params: { id: portfolioData.classiques.id } },
+    { params: { id: portfolioData.exfopino.id } },
+    { params: { id: portfolioData.topofor.id } },
+    { params: { id: portfolioData.aerorioja.id } },
+  ];
+}
+
+const { id } = Astro.params;
+const portfolio = getPortfolioFromId(id);
+---
+
+<Layout title="Jorge Madrid Portillo Portfolio">
+  <main>
+    <div class="grid md:grid-cols-2 grid-cols-1 h">
+      <Image class="h-full" src={portfolio.imageSrc} alt={portfolio.alt} />
+      <span>test</span>
+    </div>
+  </main>
+</Layout>
+
+<style></style>
