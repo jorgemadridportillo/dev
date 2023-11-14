@@ -1,0 +1,27 @@
+---
+interface Props {
+  image: any;
+  alt: string;
+}
+
+const { image, alt } = Astro.props;
+import { Image } from "astro:assets";
+import plus from "/src/images/icons/plus.svg";
+---
+
+<div class="relative cursor-pointer group">
+  <Image class="h-full" src={image} alt={alt} />
+  <div
+    class="bg-black h-full w-full absolute top-0 left-0 opacity-0 group-hover:opacity-50 transition-all"
+  >
+  </div>
+  <div
+    class="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 flex justify-center items-center transition-all"
+  >
+    <div
+      class="rounded-full border-solid border-4 rotate-0 group-hover:rotate-180 transition-all h-2/6 w-auto"
+    >
+      <Image src={plus} alt="plus" class="w-full h-full" />
+    </div>
+  </div>
+</div>
