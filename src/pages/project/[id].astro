@@ -23,7 +23,12 @@ const portfolio = getPortfolioFromId(id);
 <Layout title="Jorge Madrid Portillo Portfolio">
   <main>
     <div class="grid md:grid-cols-2 grid-cols-1 h">
-      <Image class="h-full" src={portfolio.imageSrc} alt={portfolio.alt} />
+      <Image
+        transition:name={`transition-image-${portfolio.id}`}
+        class="h-full"
+        src={portfolio.imageSrc}
+        alt={portfolio.alt}
+      />
       <span>test</span>
     </div>
   </main>
