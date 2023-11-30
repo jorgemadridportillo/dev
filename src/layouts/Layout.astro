@@ -25,18 +25,17 @@ import { ViewTransitions } from "astro:transitions";
       class="sticky top-0 z-50 bg-white py-5 px-5 border-b flex flex-row justify-between relative"
     >
       <div>
-        <a>About me</a>
+        <a href="/about-me">About me</a>
       </div>
       <div
-        class="flex flex-col items-center absolute top-0 left-1/2 -translate-x-1/2"
+        class="flex flex-col items-center absolute sm:top-0 top-1 left-1/2 -translate-x-1/2"
       >
-        <h1 class="text-2xl">Jorge Madrid Portillo</h1>
+        <h1 class="text-2xl max-sm:hidden">Jorge Madrid Portillo</h1>
         <h2 class="text-xl">Portfolio</h2>
+        <h1 class="sm:hidden">Jorge Madrid Portillo</h1>
       </div>
       <div>
-        <b>Contact</b>: <span class="cursor-pointer"
-          >jorgemadridportillo@gmail.com</span
-        >
+        <a href="/contact">Contact</a>
       </div>
     </header>
 
