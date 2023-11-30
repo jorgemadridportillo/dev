@@ -76,6 +76,19 @@ const portfolioData = {
         location: "Logroño, Spain",
         title: "Aerorioja"
     },
+    yournextproject: {
+        id: "yournextproject", imageSrc: undefined, alt: "",
+        description: {
+            en: ``
+        },
+        url: "https://yournextproject.com",
+        platform: "Your platform of choice",
+        tech: "Latest tech",
+        year: "Right now",
+        location: "Your location",
+        title: "Your Next Project"
+    },
+
 }
 
 const getPortfolioFromId = (id) => {
