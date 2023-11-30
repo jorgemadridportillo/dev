@@ -12,24 +12,21 @@ import { Image } from "astro:assets";
 import plus from "/src/images/icons/plus.svg";
 ---
 
-<a id={id} class="relative cursor-pointer group" href={`/project/${id}`}>
-  {
-    imageSrc ? (
-      <Image
-        transition:name={`transition-image-${portfolio.id}`}
-        class="h-full"
-        src={imageSrc}
-        alt={alt}
-      />
-    ) : (
-      <div
-        transition:name={`transition-image-${portfolio.id}`}
-        class="w-full h-full block bg-slate-200 flex flex-col justify-center items-center"
-      >
-        <p class="text-4xl">{portfolio.title}</p>
-      </div>
-    )
-  }
+<a
+  id={id}
+  class="relative cursor-pointer group max-sm:border-b max-sm:border-t"
+  href={`/project/${id}`}
+>
+  <div class="relative" transition:name={`transition-image-${portfolio.id}`}>
+    <Image class="h-full" src={imageSrc} alt={alt} />
+    {
+      portfolio.show_title && (
+        <p class="text-white text-6xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          {portfolio.title}
+        </p>
+      )
+    }
+  </div>
 
   <div
     class="bg-black h-full w-full absolute top-0 left-0 opacity-0 group-hover:opacity-50 transition-all"

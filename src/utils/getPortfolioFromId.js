@@ -3,6 +3,7 @@ import classiquesImage from "/src/images/classiques.png"
 import topoforImage from "/src/images/topofor.png"
 import exfopinoImage from "/src/images/exfopino.png"
 import aeroriojaImage from "/src/images/aerorioja.png"
+import yournextprojectImage from "/src/images/yournextproject.png"
 
 const portfolioData = {
     donbolsas: {
@@ -77,16 +78,19 @@ const portfolioData = {
         title: "Aerorioja"
     },
     yournextproject: {
-        id: "yournextproject", imageSrc: undefined, alt: "",
+        id: "yournextproject", imageSrc: yournextprojectImage, alt: "your next project",
         description: {
-            en: ``
+            en: `Discover great oportunities working with me. Create a new personal website for your brand, an e-commerce or any other solution
+            you can imagine using the latest tech available. Fast and reliable web solutions for modern day problems. Show yourself, sell your products,
+            and let your website talk about you.`
         },
         url: "https://yournextproject.com",
         platform: "Your platform of choice",
         tech: "Latest tech",
         year: "Right now",
         location: "Your location",
-        title: "Your Next Project"
+        title: "Your Next Project",
+        show_title: true
     },
 
 }
