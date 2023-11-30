@@ -12,7 +12,7 @@ import { Image } from "astro:assets";
 import plus from "/src/images/icons/plus.svg";
 ---
 
-<a class="relative cursor-pointer group" href={`/project/${id}`}>
+<a id={id} class="relative cursor-pointer group" href={`/project/${id}`}>
   <Image
     transition:name={`transition-image-${portfolio.id}`}
     class="h-full"
