@@ -22,7 +22,7 @@ import { ViewTransitions } from "astro:transitions";
     <header
       transition:persist
       transition:animate="none"
-      class="sticky top-0 z-50 bg-white py-5 px-5 border-b flex flex-row justify-between relative"
+      class="sticky top-0 z-50 bg-white py-5 px-5 border-b flex flex-row justify-between"
     >
       <div>
         <a href="/about-me">About me</a>
@@ -40,6 +40,22 @@ import { ViewTransitions } from "astro:transitions";
     </header>
 
     <slot />
+    <footer
+      transition:persist
+      transition:animate="none"
+      class="fixed bottom-0 z-50 bg-white py-0.5 px-5 border-t flex flex-row justify-between w-full text-sm"
+    >
+      <a href="">&#128007;</a>
+      <span class="text-md">Jorge Madrid Portillo - 2023</span>
+
+      <span
+        >Made with <a
+          class="text-blue-400"
+          target="_blank"
+          href="https://astro.build/">Astro</a
+        ></span
+      >
+    </footer>
     <style is:global>
       :root {
         --accent: 136, 58, 234;
