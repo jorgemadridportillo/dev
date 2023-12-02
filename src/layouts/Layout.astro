@@ -16,23 +16,21 @@ const t = useTranslations(lang);
 
 <!doctype html>
 <html lang={lang}>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <ViewTransitions />
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Astro description" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="generator" content={Astro.generator} />
+  <title>{title}</title>
+  <ViewTransitions />
+
   <body>
     <header
-      transition:persist
       transition:animate="none"
       class="sticky top-0 z-50 bg-white py-5 px-5 max-sm:px-2 border-b flex flex-row justify-between"
     >
       <div>
-        <a href=`/${lang}/about-me`>{t("nav.about")}</a>
+        <a href={`/${lang}/about-me`}>{t("nav.about")}</a>
       </div>
       <a
         href=`/${lang}`
@@ -49,7 +47,6 @@ const t = useTranslations(lang);
 
     <slot />
     <footer
-      transition:persist
       transition:animate="none"
       class="fixed bottom-0 z-50 bg-white py-0.5 px-5 border-t flex flex-row justify-between w-full text-sm"
     >
@@ -57,10 +54,9 @@ const t = useTranslations(lang);
       <span class="text-md">Jorge Madrid Portillo - 2023</span>
 
       <span
-        >Made with <a
-          class="text-blue-400"
-          target="_blank"
-          href="https://astro.build/">Astro</a
+        >{t("footer.made_with")}
+        <a class="text-blue-400" target="_blank" href="https://astro.build/"
+          >Astro</a
         ></span
       >
     </footer>

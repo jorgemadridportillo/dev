@@ -1,14 +1,19 @@
 ---
 import { languages } from "../i18n/ui";
 import { translateURL } from "../i18n/utils";
+
+import { Image } from "astro:assets";
+import spainIcon from "/src/images/icons/spain.png";
+import englandIcon from "/src/images/icons/united-kingdom.png";
 ---
 
-<ul>
-  {
-    Object.entries(languages).map(([lang, label]) => (
-      <li>
-        <a href={translateURL(Astro.url, lang)}>{label}</a>
-      </li>
-    ))
-  }
-</ul>
+<div
+  class="flex flex-row gap-3 items-center justify-center max-sm:flex-col max-sm:gap-1 max-sm:-mt-2"
+>
+  <a href={translateURL(Astro.url, "es")}>
+    <Image src={spainIcon} alt="spain icon" width="25" height="25" />
+  </a>
+  <a href={translateURL(Astro.url, "en")}>
+    <Image src={englandIcon} alt="Uk icon" width="25" height="25" />
+  </a>
+</div>
