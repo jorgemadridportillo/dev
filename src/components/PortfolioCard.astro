@@ -18,7 +18,7 @@ const lang = getLangFromUrl(Astro.url);
 <a
   id={id}
   class="relative cursor-pointer group max-sm:border-b max-sm:border-t"
-  href={`/${lang}/project/${id}`}
+  href={`${import.meta.env.BASE_URL}/${lang}/project/${id}`}
 >
   <div class="relative" transition:name={`transition-image-${portfolio.id}`}>
     <Image class="h-full" src={imageSrc} alt={alt} />
