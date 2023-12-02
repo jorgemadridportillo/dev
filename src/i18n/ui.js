@@ -15,7 +15,8 @@ export const ui = {
         'contact.title': 'Contact me at:',
         'contact.copy': 'Copy to clipboard',
         'contact.copy_success': 'Successfully Copied',
-        'contact.thanks': 'Thank you'
+        'contact.thanks': 'Thank you',
+        'footer.made_with': 'Made with'
     },
     es: {
         'nav.contact': 'Contacto',
@@ -24,6 +25,7 @@ export const ui = {
         'contact.title': 'Contactame en:',
         'contact.copy': 'Copiar al portapapeles',
         'contact.copy_success': 'Copiado correctamente',
-        'contact.thanks': 'Gracias'
+        'contact.thanks': 'Gracias',
+        'footer.made_with': 'Hecho con'
     },
 }
