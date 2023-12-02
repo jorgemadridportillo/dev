@@ -6,7 +6,7 @@ image:
 title: "Jorge Madrid Portillo"
 location: "USA, Manhattan - Madrid, Spain"
 year: ""
-platform: "Web Dev, Software solutions"
+platform: "Web Dev, Soluciones de Software"
 tech: "Shopify (Hydrogen and Liquid), Javascript, React, Remix, Wordpress, React Native, PHP"
 show_title: false
 secondary_link: { href: "/data/Jorge_Madrid_Portillo_CV.pdf", text: "Download my resume in pdf" }

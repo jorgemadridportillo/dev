@@ -23,17 +23,6 @@ export async function getStaticPaths() {
   return paths;
 }
 
-// export function getStaticPaths() {
-//   return [
-//     { params: { id: portfolioData.donbolsas.id } },
-//     { params: { id: portfolioData.classiques.id } },
-//     { params: { id: portfolioData.exfopino.id } },
-//     { params: { id: portfolioData.topofor.id } },
-//     { params: { id: portfolioData.aerorioja.id } },
-//     { params: { id: portfolioData.yournextproject.id } },
-//   ];
-// }
-
 const { lang } = Astro.params;
 const page = Astro.props;
 const portfolio = page.data;

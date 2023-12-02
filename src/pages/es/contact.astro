@@ -1,9 +1,11 @@
 ---
 import Layout from "/src/layouts/Layout.astro";
 
-import { getLangFromUrl } from "/src/i18n/utils";
+import { getLangFromUrl, useTranslations } from "/src/i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
+
+const t = useTranslations(lang);
 ---
 
 <style>
@@ -38,18 +40,18 @@ const lang = getLangFromUrl(Astro.url);
     <div
       class="flex flex-col gap-5 p-5 justify-center items-center min-h-[300px]"
     >
-      <h3 class="text-3xl">Contact me at:</h3>
+      <h3 class="text-3xl">{t("contact.title")}</h3>
       <div class="flex flex-col gap-3">
         <h4 class="text-xl">jorgemadridportillo@gmail.com</h4>
         <button class="border shadow p-2 cursor-pointer" id="copy-email"
-          >Copy to clipboard</button
+          >{t("contact.copy")}</button
         >
-        <span id="snackbar">Successfully Copied</span>
+        <span id="snackbar">{t("contact.copy_success")}</span>
       </div>
-      <p class="text-2xl">Thank you</p>
+      <p class="text-2xl">{t("contact.thanks")}</p>
       <p class="text-9xl">&#128231;</p>
       <div class="md:mt-24 lg:mt-32 mx-auto mt-8 mb-20">
-        <a class="text-3xl" href=`/${lang}`>&larr; Go home</a>
+        <a class="text-3xl" href=`/${lang}`>&larr; {t("main.go_home")}</a>
       </div>
     </div>
   </main>
