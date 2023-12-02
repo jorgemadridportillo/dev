@@ -3,7 +3,7 @@ id: "jorgemadrid"
 image: 
   src: "/src/images/jorgemadrid.jpg"
   alt: "jorge madrid"
-title: "Don Bolsas"
+title: "Jorge Madrid Portillo"
 location: "USA, Manhattan - Madrid, Spain"
 year: ""
 platform: "Web Dev, Software solutions"
