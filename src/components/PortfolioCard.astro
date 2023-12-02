@@ -10,12 +10,15 @@ const { imageSrc, alt, id } = getPortfolioFromId(portfolio.id);
 
 import { Image } from "astro:assets";
 import plus from "/src/images/icons/plus.svg";
+
+import { getLangFromUrl } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
 ---
 
 <a
   id={id}
   class="relative cursor-pointer group max-sm:border-b max-sm:border-t"
-  href={`/project/${id}`}
+  href={`/${lang}/project/${id}`}
 >
   <div class="relative" transition:name={`transition-image-${portfolio.id}`}>
     <Image class="h-full" src={imageSrc} alt={alt} />

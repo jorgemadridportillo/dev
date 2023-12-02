@@ -13,6 +13,9 @@ export function useTranslations(lang) {
 }
 
 export function translateURL(url, l) {
+    let pattern = /\/\w\w/i
+    let result = pattern.exec(url.pathname)
+    if (result) return url.pathname.replace('/' + getLangFromUrl(url), '/' + l)
     return url.pathname.replace('/' + getLangFromUrl(url) + '/', '/' + l + '/')
 }
 

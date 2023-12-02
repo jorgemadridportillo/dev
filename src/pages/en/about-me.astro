@@ -1,7 +1,7 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
 import { getPortfolioFromId } from "/src/utils/getPortfolioFromId.js";
-import CardDetail from "../components/CardDetail.astro";
+import CardDetail from "../../components/CardDetail.astro";
 
 const id = "jorgemadrid";
 const portfolio = getPortfolioFromId(id);
@@ -9,7 +9,7 @@ const portfolio = getPortfolioFromId(id);
 
 <Layout title="Jorge Madrid Portillo Portfolio">
   <main class="">
-    <!-- <CardDetail portfolio={portfolio} /> -->
+    <CardDetail portfolio={portfolio} />
   </main>
 
   <style></style>

@@ -5,6 +5,8 @@ image:
   alt: "don bolsas web"
 title: "Don Bolsas"
 location: "Madrid, Spain"
+show_title: false
+secondary_link: { text: "", href: ""}
 year: "2020"
 tech: "Liquid"
 platform: "Shopify"

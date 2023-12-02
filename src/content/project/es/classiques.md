@@ -6,6 +6,8 @@ image:
 title: "Don Bolsas"
 platform: "Shopify"
 location: "USA, New York"
+show_title: false
+secondary_link: { text: "", href: ""}
 year: "2023"
 tech: "Hydrogen"
 url: "https://classiques.com"
