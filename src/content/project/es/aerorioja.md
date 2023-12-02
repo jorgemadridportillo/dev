@@ -11,8 +11,5 @@ show_title: false
 secondary_link: { text: "", href: ""}
 tech: "Custom"
 url: "https://aerorioja.com"
-description: Aerorioja is a website that explores a fantastic aerodrome in the north of Spain (Logroño). Built with care using Wordpress, it has been perfectly
-            since its deployment. The website also serves as a portal for users that want to log in to their personal area. The pages were built using custom code and
-            custom elemnts with HTML, JS and CSS. The users can learn from courses, schedules and contact the owner to reserve lessons and experiences. The galery section shows beautiful
-            pictures from different planes and landscapes.
+description: Aerorioja es un sitio web que explora un fantástico aeródromo en el norte de España (Logroño). Construido con cuidado utilizando WordPress, ha estado funcionando perfectamente desde su implementación. El sitio web también sirve como un portal para usuarios que desean iniciar sesión en su área personal. Las páginas fueron construidas utilizando código personalizado y elementos personalizados con HTML, JS y CSS. Los usuarios pueden aprender a través de cursos, consultar horarios y ponerse en contacto con el propietario para reservar lecciones y experiencias. La sección de galería muestra hermosas imágenes de diferentes aviones y paisajes.
 ---

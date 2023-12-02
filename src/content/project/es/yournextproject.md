@@ -3,15 +3,13 @@ id: "yournextproject"
 image: 
   src: "/src/images/yournextproject.png"
   alt: "don bolsas web"
-title: "Your Next Project"
-location: "Your location"
-year: "Right now"
-platform: "Your platform of choice"
-tech: "Latest tech"
+title: "Tu próximo proyecto"
+location: "Tu localización"
+year: "Ahora mismo"
+platform: "La plataforma de tu elección"
+tech: "La última tecnología"
 url: "https://yournextproject.com"
 show_title: true
 secondary_link: { text: "", href: ""}
-description: Discover great oportunities working with me. Create a new personal website for your brand, an e-commerce or any other solution
-            you can imagine using the latest tech available. Fast and reliable web solutions for modern day problems. Show yourself, sell your products,
-            and let your website talk about you.
+description:  Descubre excelentes oportunidades trabajando conmigo. Crea un nuevo sitio web personal para tu marca, una tienda en línea u cualquier otra solución que puedas imaginar utilizando la última tecnología disponible. Soluciones web rápidas y confiables para los problemas de la vida moderna. Preséntate, vende tus productos y deja que tu sitio web hable de ti.
 ---

@@ -3,13 +3,19 @@ import Layout from "../../layouts/Layout.astro";
 import { getPortfolioFromId } from "/src/utils/getPortfolioFromId.js";
 import CardDetail from "../../components/CardDetail.astro";
 
-const id = "jorgemadrid";
-const portfolio = getPortfolioFromId(id);
+import { getCollection } from "astro:content";
+import { getLangFromUrl } from "/src/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+
+const project = await getCollection("project", (data) => {
+  return data.slug === lang + "/jorgemadrid";
+});
 ---
 
 <Layout title="Jorge Madrid Portillo Portfolio">
   <main class="">
-    <CardDetail portfolio={portfolio} />
+    <CardDetail portfolio={project[0].data} />
   </main>
 
   <style></style>

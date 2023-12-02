@@ -39,8 +39,9 @@ const lang = getLangFromUrl(Astro.url);
         <h1 class="text-2xl max-sm:text-lg">Jorge Madrid Portillo</h1>
         <h2 class="text-xl max-sm:text-lg">Portfolio</h2>
       </a>
-      <div>
+      <div class="flex flex-row gap-3">
         <a href=`/${lang}/contact`>Contact</a>
+        <LanguagePicker />
       </div>
     </header>
 
@@ -51,7 +52,6 @@ const lang = getLangFromUrl(Astro.url);
       class="fixed bottom-0 z-50 bg-white py-0.5 px-5 border-t flex flex-row justify-between w-full text-sm"
     >
       <a href="">&#128007;</a>
-      <LanguagePicker />
       <span class="text-md">Jorge Madrid Portillo - 2023</span>
 
       <span
