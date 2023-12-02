@@ -5,6 +5,7 @@ interface Props {
 
 const { title } = Astro.props;
 import { ViewTransitions } from "astro:transitions";
+import LanguagePicker from "/src/components/LanguagePicker.astro";
 ---
 
 <!doctype html>
@@ -46,6 +47,7 @@ import { ViewTransitions } from "astro:transitions";
       class="fixed bottom-0 z-50 bg-white py-0.5 px-5 border-t flex flex-row justify-between w-full text-sm"
     >
       <a href="">&#128007;</a>
+      <LanguagePicker />
       <span class="text-md">Jorge Madrid Portillo - 2023</span>
 
       <span

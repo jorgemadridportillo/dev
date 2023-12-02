@@ -1,0 +1,48 @@
+---
+import Layout from "/src/layouts/Layout.astro";
+import { Image } from "astro:assets";
+import {
+  getPortfolioFromId,
+  portfolioData,
+} from "/src/utils/getPortfolioFromId.js";
+import CardDetail from "/src/components/CardDetail.astro";
+
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const projects = await getCollection("project");
+
+  const paths = projects.map((project) => {
+    const [lang, ...slug] = project.slug.split("/");
+    return {
+      params: { lang, id: slug.join("/") || undefined },
+      props: project,
+    };
+  });
+
+  return paths;
+}
+
+// export function getStaticPaths() {
+//   return [
+//     { params: { id: portfolioData.donbolsas.id } },
+//     { params: { id: portfolioData.classiques.id } },
+//     { params: { id: portfolioData.exfopino.id } },
+//     { params: { id: portfolioData.topofor.id } },
+//     { params: { id: portfolioData.aerorioja.id } },
+//     { params: { id: portfolioData.yournextproject.id } },
+//   ];
+// }
+
+const { lang } = Astro.params;
+const page = Astro.props;
+const portfolio = page.data;
+---
+
+<Layout title="Jorge Madrid Portillo Portfolio">
+  <main class="">
+    <CardDetail portfolio={portfolio} />
+  </main>
+
+  <style></style>
+</Layout>

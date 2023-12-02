@@ -1,0 +1,14 @@
+---
+import { languages } from "../i18n/ui";
+import { translateURL } from "../i18n/utils";
+---
+
+<ul>
+  {
+    Object.entries(languages).map(([lang, label]) => (
+      <li>
+        <a href={translateURL(Astro.url, lang)}>{label}</a>
+      </li>
+    ))
+  }
+</ul>
