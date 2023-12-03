@@ -7,7 +7,7 @@ title: "Exfopino"
 location: "Pontevedra, Spain"
 year: "2020"
 platform: "Wordpress"
-show_title: false
+show_title: true
 secondary_link: { text: "", href: ""}
 tech: "Elementor"
 url: "https://exfopino.es"

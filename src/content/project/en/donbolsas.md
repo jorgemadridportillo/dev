@@ -8,7 +8,7 @@ location: "Madrid, Spain"
 year: "2020"
 platform: "Shopify"
 tech: "Liquid"
-show_title: false
+show_title: true
 secondary_link: { text: "", href: ""}
 url: "https://donbolsas.com"
 description: Fully functional e-commerce based in Liquid Shopify template scripting language. 

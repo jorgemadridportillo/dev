@@ -3,12 +3,12 @@ id: "classiques"
 image: 
   src: "/src/images/classiques.png"
   alt: "classiques web"
-title: "Don Bolsas"
+title: "Classiques"
 platform: "Shopify"
 location: "USA, New York"
 year: "2023"
 tech: "Hydrogen"
-show_title: false
+show_title: true
 secondary_link: { text: "", href: ""}
 url: "https://classiques.com"
 description: Custom made fully functional e-commerce site developed with Shopify's latests technology Hydrogen. Using Remix 2.0 as 
