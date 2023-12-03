@@ -1,7 +1,7 @@
 import { ui, defaultLang, showDefaultLang } from './ui'
 
 export function getLangFromUrl(url) {
-    const [, lang] = url.pathname.split('/')
+    const [, , lang] = url.pathname.split('/')
     if (lang in ui) return lang
     return defaultLang
 }
@@ -13,6 +13,7 @@ export function useTranslations(lang) {
 }
 
 export function translateURL(url, l) {
+    console.log(url)
     let pattern = /\/\w\w/i
     let result = pattern.exec(url.pathname)
     if (result) return url.pathname.replace('/' + getLangFromUrl(url), '/' + l)
