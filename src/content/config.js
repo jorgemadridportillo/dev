@@ -14,7 +14,10 @@ const projectCollection = defineCollection({
             src: z.string(),
             alt: z.string(),
         }),
-        show_title: z.boolean(),
+        show_title: z.object({
+            portfolio: z.boolean(),
+            card: z.boolean(),
+        }),
         secondary_link: z.object({
             href: z.string(),
             text: z.string()

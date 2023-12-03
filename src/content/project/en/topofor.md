@@ -8,7 +8,7 @@ location: "Pontevedra, Spain"
 year: "2023"
 platform: "Wordpress"
 tech: "Elementor"
-show_title: true
+show_title: {portfolio: true, card: false}
 secondary_link: { text: "", href: ""}
 url: "https://topofor.es"
 description: Topography business site developed for a spanish company based in the north of Spain in Pontevedra. Explore the wonders of topography, drones and the latest

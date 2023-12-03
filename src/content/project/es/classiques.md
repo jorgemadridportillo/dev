@@ -3,10 +3,10 @@ id: "classiques"
 image: 
   src: "/src/images/classiques.png"
   alt: "classiques web"
-title: "Don Bolsas"
+title: "Classiques"
 platform: "Shopify"
 location: "USA, New York"
-show_title: false
+show_title: {portfolio: true, card: false}
 secondary_link: { text: "", href: ""}
 year: "2023"
 tech: "Hydrogen"

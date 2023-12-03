@@ -8,7 +8,7 @@ platform: "Shopify"
 location: "USA, New York"
 year: "2023"
 tech: "Hydrogen"
-show_title: true
+show_title: {portfolio: true, card: false}
 secondary_link: { text: "", href: ""}
 url: "https://classiques.com"
 description: Custom made fully functional e-commerce site developed with Shopify's latests technology Hydrogen. Using Remix 2.0 as 

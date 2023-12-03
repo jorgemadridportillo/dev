@@ -7,7 +7,7 @@ title: "Aerorioja"
 location: "Logroño, Spain"
 year: "2017"
 platform: "Wordpress"
-show_title: false
+show_title: {portfolio: true, card: false}
 secondary_link: { text: "", href: ""}
 tech: "Custom"
 url: "https://aerorioja.com"

@@ -6,7 +6,7 @@ image:
 title: "Aerorioja"
 location: "Logroño, Spain"
 year: "2017"
-show_title: true
+show_title: {portfolio: true, card: false}
 secondary_link: { text: "", href: ""}
 platform: "Wordpress"
 tech: "Custom"

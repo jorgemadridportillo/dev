@@ -7,8 +7,7 @@ title: "Exfopino"
 location: "Pontevedra, Spain"
 year: "2020"
 platform: "Wordpress"
-show_title: true
-secondary_link: { text: "", href: ""}
+show_title: {portfolio: true, card: false}
 tech: "Elementor"
 url: "https://exfopino.es"
 description: Discover the wondrs of this sawmill and wood work station in the north of Spain. Explore custom made wood products and the excellence of woodwork

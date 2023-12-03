@@ -8,7 +8,7 @@ location: "Pontevedra, Spain"
 year: "2020"
 platform: "Wordpress"
 tech: "Elementor"
-show_title: false
+show_title: {portfolio: true, card: false}
 secondary_link: { text: "", href: ""}
 url: "https://exfopino.es"
 description: Descubre las maravillas de esta aserradero y estación de trabajo de madera en el norte de España.

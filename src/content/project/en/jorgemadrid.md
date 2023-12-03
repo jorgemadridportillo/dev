@@ -8,7 +8,7 @@ location: "USA, Manhattan - Madrid, Spain"
 year: ""
 platform: "Web Dev, Software solutions"
 tech: "Shopify (Hydrogen and Liquid), Javascript, React, Remix, Wordpress, React Native, PHP"
-show_title: true
+show_title: {portfolio: true, card: false}
 secondary_link: { href: "/data/Jorge_Madrid_Portillo_CV.pdf", text: "Download my resume in pdf" }
 url: "https://www.linkedin.com/in/jorge-madrid-0b17a915a/"
 description: I am a software engineer with more than 12 years of experience in the field, both as a freelance and working for other companies. After graduating from San Pablo CEU 

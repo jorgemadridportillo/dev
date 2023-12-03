@@ -5,7 +5,7 @@ image:
   alt: "topofor web"
 title: "Topofor"
 location: "Pontevedra, Spain"
-show_title: false
+show_title: {portfolio: true, card: false}
 secondary_link: { text: "", href: ""}
 year: "2023"
 platform: "Wordpress"
