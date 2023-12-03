@@ -2,7 +2,21 @@
 import Layout from "../../layouts/Layout.astro";
 import PortfolioCard from "/src/components/PortfolioCard.astro";
 
-import { portfolioData } from "/src/utils/getPortfolioFromId.js";
+import { getLangFromUrl, useTranslations } from "/src/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("project", (data) => {
+  return data.id.startsWith(lang);
+});
+
+const portfolioData = projects.reduce((result, currentItem) => {
+  const { id, data } = currentItem;
+  result[data.id] = data;
+  return result;
+}, {});
 ---
 
 <Layout title="Jorge Madrid Portillo Portfolio">

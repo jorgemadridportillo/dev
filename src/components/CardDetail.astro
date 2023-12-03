@@ -25,7 +25,7 @@ const { imageSrc } = getPortfolioFromId(portfolio.id);
       transition:name={`transition-image-${portfolio.id}`}
     >
       <Image
-        class="h-full border-r border-b max-h-[600px] w-auto"
+        class="h-full border-r border-b max-h-[600px] w-auto max-sm:max-h-[350px]"
         src={imageSrc}
         alt={portfolio.image.alt}
         width="950"
@@ -59,7 +59,9 @@ const { imageSrc } = getPortfolioFromId(portfolio.id);
         portfolio.secondary_link && (
           <a
             class="text-blue-500"
-            href={portfolio.secondary_link.href}
+            href={`${import.meta.env.BASE_URL}/${
+              portfolio.secondary_link.href
+            }`}
             target="_blank"
           >
             {portfolio.secondary_link.text}
