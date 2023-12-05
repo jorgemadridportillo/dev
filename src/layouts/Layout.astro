@@ -12,6 +12,10 @@ import { getLangFromUrl, useTranslations } from "/src/i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 
 const t = useTranslations(lang);
+
+import { Image } from "astro:assets";
+import menuIcon from "/src/images/icons/menu.png";
+import crossIcon from "/src/images/icons/cross.png";
 ---
 
 <!doctype html>
@@ -31,19 +35,36 @@ const t = useTranslations(lang);
   <body>
     <header
       transition:animate="none"
-      class="sticky top-0 z-50 bg-white py-2 px-6 max-sm:px-2 border-b flex flex-row justify-between items-center"
+      class="sticky top-0 z-50 bg-white py-2 px-6 max-sm:px-4 border-b flex flex-row justify-between items-center"
     >
       <a
         href=`${import.meta.env.BASE_URL}/${lang}`
         class="flex flex-col items-center"
       >
-        <h1 class="text-2xl max-sm:text-lg">Jorge Madrid Portillo</h1>
-        <h2 class="text-xl max-sm:text-lg">Software Dev</h2>
+        <h1 class="text-2xl">Jorge Madrid Portillo</h1>
+        <h2 class="text-xl">Software Dev</h2>
       </a>
 
-      <div class="flex flex-row gap-3">
-        <a href={`${import.meta.env.BASE_URL}/${lang}/portfolio`}
-          >{t("nav.portfolio")}</a
+      <button id="menu-button" class="sm:hidden">
+        <Image
+          src={menuIcon}
+          alt="spain icon"
+          width="35"
+          height="35"
+          id="menu-button-burger"
+        />
+        <Image
+          src={crossIcon}
+          alt="spain icon"
+          width="30"
+          height="30"
+          class="hidden"
+          id="menu-button-cross"
+        />
+      </button>
+
+      <div class="flex flex-row gap-3 max-sm:hidden">
+        <a href={`${import.meta.env.BASE_URL}/${lang}/`}>{t("nav.portfolio")}</a
         >
         <a href={`${import.meta.env.BASE_URL}/${lang}/about-me`}
           >{t("nav.about")}</a
@@ -56,6 +77,22 @@ const t = useTranslations(lang);
     </header>
 
     <slot />
+    <div
+      id="mobile-menu"
+      class="fixed z-90 w-screen h-screen -left-[100%] flex justify-center items-center bg-white opacity-0 duration-200 top-0"
+    >
+      <div class="flex flex-col gap-6 text-3xl">
+        <a href={`${import.meta.env.BASE_URL}/${lang}/`}>{t("nav.portfolio")}</a
+        >
+        <a href={`${import.meta.env.BASE_URL}/${lang}/about-me`}
+          >{t("nav.about")}</a
+        >
+        <a href=`${import.meta.env.BASE_URL}/${lang}/contact`
+          >{t("nav.contact")}</a
+        >
+        <LanguagePicker isMobile={true} />
+      </div>
+    </div>
     <footer
       transition:animate="none"
       class="fixed bottom-0 z-50 bg-white py-0.5 px-5 border-t flex flex-row justify-between w-full text-sm"
@@ -99,5 +136,48 @@ const t = useTranslations(lang);
           monospace;
       }
     </style>
+    <script>
+      var isMenuOpened = false;
+
+      function closeMenu() {
+        var menu = document.getElementById("mobile-menu");
+        var menuButtonBurger = document.getElementById("menu-button-burger");
+        var menuButtonCross = document.getElementById("menu-button-cross");
+        isMenuOpened = false;
+        menu.classList.add("-left-[100%]", "opacity-0");
+        menu.classList.remove("left-0", "opacity-95");
+        menuButtonBurger.classList.remove("hidden");
+        menuButtonCross.classList.add("hidden");
+      }
+      function toggleMenu() {
+        var menu = document.getElementById("mobile-menu");
+        var menuButtonBurger = document.getElementById("menu-button-burger");
+        var menuButtonCross = document.getElementById("menu-button-cross");
+
+        if (!isMenuOpened) {
+          isMenuOpened = true;
+          menu.classList.remove("-left-[100%]", "opacity-0");
+          menu.classList.add("left-0", "opacity-95");
+          menuButtonBurger.classList.add("hidden");
+          menuButtonCross.classList.remove("hidden");
+        } else {
+          closeMenu();
+        }
+      }
+
+      function addOpenMenuEventListener() {
+        const menuButton = document.querySelector("#menu-button");
+        if (menuButton) {
+          menuButton.addEventListener("click", () => {
+            toggleMenu();
+          });
+        }
+      }
+      document.addEventListener("astro:after-swap", () => {
+        addOpenMenuEventListener();
+        closeMenu();
+      });
+      addOpenMenuEventListener();
+    </script>
   </body>
 </html>
