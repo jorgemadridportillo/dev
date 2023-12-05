@@ -11,6 +11,7 @@ export const ui = {
     en: {
         'nav.contact': 'Contact',
         'nav.about': 'About me',
+        'nav.portfolio': 'Portfolio',
         'main.go_home': 'Go home',
         'contact.title': 'Contact me at:',
         'contact.copy': 'Copy to clipboard',
@@ -24,6 +25,7 @@ export const ui = {
     es: {
         'nav.contact': 'Contacto',
         'nav.about': 'Sobre mi',
+        'nav.portfolio': 'Portfolio',
         'main.go_home': 'Ir al portfolio',
         'contact.title': 'Contactame en:',
         'contact.copy': 'Copiar al portapapeles',
