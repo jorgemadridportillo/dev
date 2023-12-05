@@ -16,6 +16,9 @@ export const ui = {
         'contact.copy': 'Copy to clipboard',
         'contact.copy_success': 'Successfully Copied',
         'contact.thanks': 'Thank you',
+        'contact.or': 'Or send me a message',
+        'contact.send': 'Send',
+        'contact.mailto': 'Open mail to app',
         'footer.made_with': 'Made with'
     },
     es: {
@@ -26,6 +29,9 @@ export const ui = {
         'contact.copy': 'Copiar al portapapeles',
         'contact.copy_success': 'Copiado correctamente',
         'contact.thanks': 'Gracias',
+        'contact.or': 'O envíame un mensaje',
+        'contact.send': 'Envíar',
+        'contact.mailto': 'Abrir app de mail',
         'footer.made_with': 'Hecho con'
     },
 }
