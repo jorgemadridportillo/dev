@@ -16,6 +16,8 @@ const t = useTranslations(lang);
 import { Image } from "astro:assets";
 import menuIcon from "/src/images/icons/menu.png";
 import crossIcon from "/src/images/icons/cross.png";
+// Supports weights 300-900
+import "@fontsource-variable/rubik";
 ---
 
 <!doctype html>
@@ -120,9 +122,9 @@ import crossIcon from "/src/images/icons/cross.png";
         );
       }
       html {
-        font-family: system-ui, sans-serif;
-        /* background: #13151a; */
-        /* background-size: 224px; */
+      }
+      body {
+        font-family: "Rubik Variable", sans-serif;
       }
       code {
         font-family:
