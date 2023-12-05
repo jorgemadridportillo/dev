@@ -60,12 +60,12 @@ const t = useTranslations(lang);
       <form
         action="https://formspree.io/f/xqkvrkaq"
         method="POST"
-        class="flex flex-col gap-3 items-end"
+        class="flex flex-col gap-3 items-end max-sm:w-full sm:min-w-[500px]"
       >
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 max-sm:w-full sm:min-w-[500px]">
           <div class="flex flex-col">
             <label for="email" class="mb-2">{t("contact.your_email")} :</label>
-            <input class="border" type="email" name="email" size="40" />
+            <input class="border" type="email" name="email" />
           </div>
 
           <div class="flex flex-col">
