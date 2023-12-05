@@ -20,6 +20,8 @@ export const ui = {
         'contact.or': 'Or send me a message',
         'contact.send': 'Send',
         'contact.mailto': 'Open mail to app',
+        'contact.your_email': 'Your email',
+        'contact.your_message': 'Your message',
         'footer.made_with': 'Made with'
     },
     es: {
@@ -34,6 +36,8 @@ export const ui = {
         'contact.or': 'O envíame un mensaje',
         'contact.send': 'Envíar',
         'contact.mailto': 'Abrir app de mail',
+        'contact.your_email': 'Tu email',
+        'contact.your_message': 'Tu mensaje',
         'footer.made_with': 'Hecho con'
     },
 }

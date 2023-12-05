@@ -64,12 +64,14 @@ const t = useTranslations(lang);
       >
         <div class="flex flex-col gap-2">
           <div class="flex flex-col">
-            <label for="email" class="mb-2"> Your email:</label>
+            <label for="email" class="mb-2">{t("contact.your_email")} :</label>
             <input class="border" type="email" name="email" size="40" />
           </div>
 
           <div class="flex flex-col">
-            <label for="message" class="mb-2"> Your message:</label>
+            <label for="message" class="mb-2">
+              {t("contact.your_message")}:</label
+            >
             <textarea class="border" name="message" rows="5"></textarea>
           </div>
         </div>
