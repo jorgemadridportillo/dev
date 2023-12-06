@@ -4,7 +4,6 @@ import PortfolioCard from "/src/components/PortfolioCard.astro";
 
 import { getLangFromUrl, useTranslations } from "/src/i18n/utils";
 
-const lang = getLangFromUrl(Astro.url);
 import { Image } from "astro:assets";
 import web from "/src/images/web.jpg";
 import ecommerce from "/src/images/ecommerce.jpg";
@@ -18,18 +17,20 @@ import php from "/src/images/techs/php.svg";
 import python from "/src/images/techs/python.svg";
 import shopify from "/src/images/techs/shopify.svg";
 import wordpress from "/src/images/techs/wordpress.svg";
+
+const lang = getLangFromUrl(Astro.url);
+
+const t = useTranslations(lang);
 ---
 
 <Layout title="Jorge Madrid Portillo Portfolio">
   <main class="max-w-6xl m-auto p-10 flex flex-col gap-12">
     <div class="grid md:grid-cols-2 grid-cols-1 gap-10 sm:gap-8 max-sm:mb-6">
       <div class="">
-        <h3 class="text-4xl">Web Development</h3>
-        <h4 class="text-3xl">Software Solutions</h4>
+        <h3 class="text-4xl">{t("index.title")}</h3>
+        <h4 class="text-3xl">{t("index.subtitle")}</h4>
         <p class="mt-5">
-          Reliable web development with care, attention and dedication.
-          Professional level work from a software engineer with years of
-          experience.
+          {t("index.description")}
         </p>
       </div>
       <div class="flex flex-col gap-2 justify-between">
@@ -39,7 +40,9 @@ import wordpress from "/src/images/techs/wordpress.svg";
           >
             1
           </div>
-          <p><b>Get in touch</b>, let's talk about your project.</p>
+          <p>
+            <b>{t("index.get_in_touch")}</b>, {t("index.lets_talk")}
+          </p>
         </div>
 
         <div class="flex flex-row gap-4 items-center">
@@ -49,8 +52,7 @@ import wordpress from "/src/images/techs/wordpress.svg";
             2
           </div>
           <p>
-            <b>Development begins</b>, weekly delivers, periodic updates and
-            communication.
+            <b>{t("index.dev_begins")}</b>, {t("index.dev_begins_2")}
           </p>
         </div>
         <div class="flex flex-row gap-4 items-center">
@@ -60,28 +62,27 @@ import wordpress from "/src/images/techs/wordpress.svg";
             3
           </div>
           <p>
-            <b>Project delivery</b>, revisions, fixes and polishes to the final
-            product.
+            <b>{t("index.delivery")}</b>, {t("index.delivery_2")}
           </p>
         </div>
       </div>
     </div>
     <div class="grid md:grid-cols-3 grid-cols-1 gap-10 sm:gap-8 max-sm:mb-6">
       <div class="flex flex-col gap-5 items-start justify-between">
-        <h4 class="text-xl">E-commerce</h4>
+        <h4 class="text-xl">{t("index.ecommerce")}</h4>
         <Image src={ecommerce} alt="ecommerce icon" class="rounded-lg" />
       </div>
       <div class="flex flex-col gap-5 items-start justify-between">
-        <h4 class="text-xl">Personal websites</h4>
+        <h4 class="text-xl">{t("index.personal_web")}</h4>
         <Image src={web} alt="ecommerce icon" class="rounded-lg" />
       </div>
       <div class="flex flex-col gap-5 items-start justify-between">
-        <h4 class="text-xl">Custom developments</h4>
+        <h4 class="text-xl">{t("index.custom_dev")}</h4>
         <Image src={software} alt="ecommerce icon" class="rounded-lg" />
       </div>
     </div>
     <div class="flex flex-col items-center gap-6">
-      <h5 class="text-lg">Technologies</h5>
+      <h5 class="text-lg">{t("index.technologies")}</h5>
       <div class="flex flex-row flex-wrap gap-10 justify-around items-center">
         <Image src={shopify} alt="react" class="rounded-lg" width="80" />
         <Image src={wordpress} alt="react" class="rounded-lg" width="80" />
@@ -99,10 +100,16 @@ import wordpress from "/src/images/techs/wordpress.svg";
         <Image src={php} alt="react" class="rounded-lg" width="80" />
       </div>
     </div>
-    <div class="flex flex-col gap-5 mt-2">
-      <a href="" class="text-xl">Go to the portfolio &rarr;</a>
-      <a href="" class="text-xl">Know about me &rarr;</a>
-      <a href="" class="text-xl">Contact me / Let's work &rarr;</a>
+    <div class="flex flex-col gap-5 mt-4 mb-8">
+      <a href=`${import.meta.env.BASE_URL}/${lang}/portfolio` class="text-xl"
+        >{t("index.go_to_portfolio")} &rarr;</a
+      >
+      <a href=`${import.meta.env.BASE_URL}/${lang}/contact` class="text-xl"
+        >{t("index.go_to_contact")} &rarr;</a
+      >
+      <a href=`${import.meta.env.BASE_URL}/${lang}/about-me` class="text-xl"
+        >{t("index.got_to_about_me")} &rarr;</a
+      >
     </div>
   </main>
 </Layout>
