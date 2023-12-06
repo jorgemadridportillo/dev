@@ -10,7 +10,7 @@ platform: "Wordpress"
 tech: "Elementor"
 show_title: {portfolio: true, card: false}
 secondary_link: { text: "", href: ""}
-url: "https://exfopino.es"
+url: "https://www.exfopino.com/"
 description: Descubre las maravillas de esta aserradero y estación de trabajo de madera en el norte de España.
              Explora productos de madera hechos a medida y la excelencia en la carpintería mientras navegas por este sitio.
               Desarrollado con las versiones más recientes de WordPress y Elementor, el sitio web ofrece una excelente experiencia de usuario según 

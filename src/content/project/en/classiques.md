@@ -10,7 +10,7 @@ year: "2023"
 tech: "Hydrogen"
 show_title: {portfolio: true, card: false}
 secondary_link: { text: "", href: ""}
-url: "https://classiques.com"
+url: "https://classiques-b7544fbdb722515943e2.o2.myshopify.dev/"
 description: Custom made fully functional e-commerce site developed with Shopify's latests technology Hydrogen. Using Remix 2.0 as 
             a framework it is possible to integrate Shopify's backend system with super fast server side rendering and hydration to deliver
             astounding experiences. Not only the site is designed with precious care but also the code remains readable, stable
