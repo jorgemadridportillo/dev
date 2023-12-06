@@ -42,6 +42,21 @@ export const ui = {
         'index.go_to_portfolio': 'Go to the portfolio',
         'index.go_to_contact': `Contact me / Let's work`,
         'index.got_to_about_me': 'About me',
+        'ecommerce.title': 'Open your store',
+        'ecommernce.sub': 'Sell your products',
+        'ecommerce.description': `Build your brand new store with the latest and fastes Shopify Hydrogen
+        tech or sell your products in a tradition customizable Wordpress store
+        with Woocomerce.`,
+        'personal_web.title': 'Open your store',
+        'personal_web.sub': 'Sell your products',
+        'personal_web.description': `Build your brand new store with the latest and fastes Shopify Hydrogen
+        tech or sell your products in a tradition customizable Wordpress store
+        with Woocomerce.`,
+        'custom_dev.title': 'Open your store',
+        'custom_dev.sub': 'Sell your products',
+        'custom_dev.description': `Build your brand new store with the latest and fastes Shopify Hydrogen
+        tech or sell your products in a tradition customizable Wordpress store
+        with Woocomerce.`
     },
     es: {
         'nav.contact': 'Contacto',
@@ -76,5 +91,19 @@ export const ui = {
         'index.go_to_portfolio': 'Ir al portfolio',
         'index.go_to_contact': `Contáctame / Trabajemos juntos`,
         'index.got_to_about_me': 'Sobre mi',
+        'ecommerce.title': 'Open your store',
+        'ecommernce.sub': 'Sell your products',
+        'ecommerce.description': `Build your brand new store with the latest and fastes Shopify Hydrogen
+        tech or sell your products in a tradition customizable Wordpress store
+        with Woocomerce.`,
+        'personal_web.title': 'Open your store',
+        'personal_web.sub': 'Sell your products',
+        'personal_web.description': `Build your brand new store with the latest and fastes Shopify Hydrogen
+        tech or sell your products in a tradition customizable Wordpress store
+        with Woocomerce.`,
+        'custom_dev.sub': 'Sell your products',
+        'custom_dev.description': `Build your brand new store with the latest and fastes Shopify Hydrogen
+        tech or sell your products in a tradition customizable Wordpress store
+        with Woocomerce.`
     },
 }

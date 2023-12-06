@@ -1,6 +1,5 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import PortfolioCard from "/src/components/PortfolioCard.astro";
 
 import { getLangFromUrl, useTranslations } from "/src/i18n/utils";
 
@@ -21,6 +20,8 @@ import wordpress from "/src/images/techs/wordpress.svg";
 const lang = getLangFromUrl(Astro.url);
 
 const t = useTranslations(lang);
+
+import FlipImage3d from "/src/components/FlipImage3d.astro";
 ---
 
 <Layout title="Jorge Madrid Portillo Portfolio">
@@ -70,15 +71,33 @@ const t = useTranslations(lang);
     <div class="grid md:grid-cols-3 grid-cols-1 gap-10 sm:gap-8 max-sm:mb-6">
       <div class="flex flex-col gap-5 items-start justify-between">
         <h4 class="text-xl">{t("index.ecommerce")}</h4>
-        <Image src={ecommerce} alt="ecommerce icon" class="rounded-lg" />
+        <FlipImage3d
+          imageSrc={ecommerce}
+          alt="ecommerce image"
+          title={t("ecommerce.title")}
+          sub={t("ecommerce.sub")}
+          description={t("ecommerce.description")}
+        />
       </div>
       <div class="flex flex-col gap-5 items-start justify-between">
         <h4 class="text-xl">{t("index.personal_web")}</h4>
-        <Image src={web} alt="ecommerce icon" class="rounded-lg" />
+        <FlipImage3d
+          imageSrc={web}
+          alt="web image"
+          title={t("personal_web.title")}
+          sub={t("personal_web.sub")}
+          description={t("personal_web.description")}
+        />
       </div>
       <div class="flex flex-col gap-5 items-start justify-between">
         <h4 class="text-xl">{t("index.custom_dev")}</h4>
-        <Image src={software} alt="ecommerce icon" class="rounded-lg" />
+        <FlipImage3d
+          imageSrc={software}
+          alt="software image"
+          title={t("custom_dev.title")}
+          sub={t("custom_dev.sub")}
+          description={t("custom_dev.description")}
+        />
       </div>
     </div>
     <div class="flex flex-col items-center gap-6">
@@ -113,3 +132,23 @@ const t = useTranslations(lang);
     </div>
   </main>
 </Layout>
+<script>
+  function flipImage(img) {
+    img.classList.add("transform", "-scale-100");
+  }
+
+  function addFlipImageEventListeners() {
+    const images = document.querySelectorAll(".image-flip");
+    if (images) {
+      images.forEach(function (img) {
+        img.addEventListener("mouseenter", function () {
+          flipImage(img);
+        });
+      });
+    }
+  }
+  document.addEventListener("astro:after-swap", () => {
+    addFlipImageEventListeners();
+  });
+  addFlipImageEventListeners();
+</script>

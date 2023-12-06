@@ -1,0 +1,41 @@
+---
+interface Props {
+  title: string;
+  sub: string;
+  description: string;
+  imageSrc: any;
+  alt: string;
+}
+
+const { sub, title, description, imageSrc, alt } = Astro.props;
+
+import { Image } from "astro:assets";
+---
+
+<div class="w-full h-auto bg-transparent cursor-pointer group perspective">
+  <div
+    class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-500"
+  >
+    <Image
+      src={imageSrc}
+      alt={alt}
+      class="rounded-lg w-full h-full invisible"
+    />
+    <div class="absolute backface-hidden w-full h-full top-0 left-0">
+      <Image src={imageSrc} alt={alt} class="rounded-lg w-full h-full" />
+    </div>
+    <div
+      class="absolute my-rotate-y-180 backface-hidden w-full h-full bg-gray-100 overflow-hidden top-0 left-0 top-0 left-0"
+    >
+      <div
+        class="text-center flex flex-col items-center justify-center h-full text-gray-800 p-4"
+      >
+        <h5 class="text-2xl font-semibold">{title}</h5>
+        <p class="my-2 text-sm">{sub}</p>
+        <p>
+          {description}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
