@@ -4,9 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 import { getLangFromUrl, useTranslations } from "/src/i18n/utils";
 
 import { Image } from "astro:assets";
-import web from "/src/images/web.jpg";
-import ecommerce from "/src/images/ecommerce.jpg";
-import software from "/src/images/software.jpg";
+
 import astro from "/src/images/techs/astro.png";
 import react from "/src/images/techs/react.svg";
 import javascript from "/src/images/techs/javascript.svg";
@@ -16,6 +14,10 @@ import php from "/src/images/techs/php.svg";
 import python from "/src/images/techs/python.svg";
 import shopify from "/src/images/techs/shopify.svg";
 import wordpress from "/src/images/techs/wordpress.svg";
+
+import ecommerce from "/src/images/compressed/ecommerce.webp";
+import web from "/src/images/compressed/web.webp";
+import software from "/src/images/compressed/software.webp";
 
 const lang = getLangFromUrl(Astro.url);
 
