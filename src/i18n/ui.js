@@ -47,16 +47,12 @@ export const ui = {
         'ecommerce.description': `Build your brand new store with the latest and fastes Shopify Hydrogen
         tech or sell your products in a tradition customizable Wordpress store
         with Woocomerce.`,
-        'personal_web.title': 'Open your store',
-        'personal_web.sub': 'Sell your products',
-        'personal_web.description': `Build your brand new store with the latest and fastes Shopify Hydrogen
-        tech or sell your products in a tradition customizable Wordpress store
-        with Woocomerce.`,
-        'custom_dev.title': 'Open your store',
-        'custom_dev.sub': 'Sell your products',
-        'custom_dev.description': `Build your brand new store with the latest and fastes Shopify Hydrogen
-        tech or sell your products in a tradition customizable Wordpress store
-        with Woocomerce.`
+        'personal_web.title': 'Your own website',
+        'personal_web.sub': 'Sell your brand',
+        'personal_web.description': `Let your website talk about yourself. Super fast static websites with amazing visuals and content; Customizable content with Sanity or wordpress. `,
+        'custom_dev.title': 'Custom software',
+        'custom_dev.sub': 'Expand your company',
+        'custom_dev.description': `Custom built software that will raise your business to the next level. Backoffice tools made with PHP, scrapping tools with Python...or anyting you can imagine.`
     },
     es: {
         'nav.contact': 'Contacto',
@@ -91,19 +87,14 @@ export const ui = {
         'index.go_to_portfolio': 'Ir al portfolio',
         'index.go_to_contact': `Contáctame / Trabajemos juntos`,
         'index.got_to_about_me': 'Sobre mi',
-        'ecommerce.title': 'Open your store',
-        'ecommernce.sub': 'Sell your products',
-        'ecommerce.description': `Build your brand new store with the latest and fastes Shopify Hydrogen
-        tech or sell your products in a tradition customizable Wordpress store
-        with Woocomerce.`,
-        'personal_web.title': 'Open your store',
-        'personal_web.sub': 'Sell your products',
-        'personal_web.description': `Build your brand new store with the latest and fastes Shopify Hydrogen
-        tech or sell your products in a tradition customizable Wordpress store
-        with Woocomerce.`,
-        'custom_dev.sub': 'Sell your products',
-        'custom_dev.description': `Build your brand new store with the latest and fastes Shopify Hydrogen
-        tech or sell your products in a tradition customizable Wordpress store
-        with Woocomerce.`
+        'ecommerce.title': 'Abre tu tienda',
+        'ecommerce.sub': 'Vende tus productos',
+        'ecommerce.description': `Construye tu nueva tienda con la tecnología más reciente y rápida de Shopify Hydrogen, o vende tus productos en una tienda tradicional personalizable de WordPress con WooCommerce.`,
+        'personal_web.title': 'Tu propia web',
+        'personal_web.sub': 'Vende tu marca',
+        'personal_web.description': `Deja que tu sitio web hable de ti. Sitios web estáticos súper rápidos con visuales y contenido sorprendentes; Contenido personalizable con Sanity o WordPress.`,
+        'custom_dev.title': 'Software propio',
+        'custom_dev.sub': 'Expande tu negocio',
+        'custom_dev.description': `Software personalizado que llevará tu negocio al siguiente nivel. Herramientas de backoffice creadas con PHP, herramientas de scraping con Python... o cualquier cosa que puedas imaginar.`
     },
 }
