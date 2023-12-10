@@ -89,7 +89,9 @@ const { imageSrc } = getPortfolioFromId(portfolio.id);
       ) : (
         <a
           class="text-3xl"
-          href={`${import.meta.env.BASE_URL}/${lang}/portfolio#${portfolio.id}`}
+          href={`${import.meta.env.BASE_URL}/${lang}/portfolio/#${
+            portfolio.id
+          }`}
         >
           &larr; {t("main.go_portfolio")}
         </a>
