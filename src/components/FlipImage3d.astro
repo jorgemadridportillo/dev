@@ -28,12 +28,12 @@ import { Image } from "astro:assets";
       class="absolute my-rotate-y-180 backface-hidden w-full h-full bg-gray-100 overflow-hidden top-0 left-0 top-0 left-0 rounded-lg"
     >
       <div
-        class="text-center flex flex-col items-center justify-center h-full text-gray-800 p-4"
+        class="text-center flex flex-col items-center justify-evenly h-full text-gray-800 p-4"
       >
         <h5 class="text-xl font-semibold sm:text-2xl">{title}</h5>
-        <p class="my-2 text-sm">{sub}</p>
+        <!-- <p class="my-2 text-sm">{sub}</p> -->
         <p class="sm:text-md text-sm">
-          {description}
+          <Fragment set:html={description} />
         </p>
       </div>
     </div>

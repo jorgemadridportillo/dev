@@ -74,14 +74,18 @@ export const ui = {
         'footer.made_with': 'Hecho con',
         'index.title': 'Desarrollo web',
         'index.subtitle': 'Soluciones de Software',
-        'index.description': `Desarrollo web fiable hecho con tacto, atención al detalle y dedicación. Trabajo profesional
-        de la mano de un ingeniero de software con años de experiencia.`,
+        'index.description': `Desarrollo web hecho con tacto, con cercanía y prestando
+        atención a los pequeños detalles. Trabajo profesional y fiable de la mano de un ingeniero de
+        software con años de experiencia y bilingüe español-inglés.`,
         'index.get_in_touch': 'Ponte en conctacto',
-        'index.lets_talk': `hablame de tu proyecto.`,
+        'index.lets_talk': `háblame de tu proyecto y juntos lo ponemos en
+        marcha.`,
         'index.dev_begins': 'Comenzamos el desarrollo',
-        'index.dev_begins_2': 'entregas semanales, comunicación y actualizaciones periodicas.',
+        'index.dev_begins_2': `entregas semanales y comunicación
+        permanente para informarte del desarrollo del proyecto.`,
         'index.delivery': 'Entrega del proyecto',
-        'index.delivery_2': 'revisión, arreglos y retoques finales al producto.',
+        'index.delivery_2': `revisión, retoques y pruebas hasta que el
+        producto cumpla con tus expectativas.`,
         'index.ecommerce': 'E-commerce',
         'index.personal_web': 'Webs personales',
         'index.custom_dev': 'Desarollos custom',
@@ -91,12 +95,21 @@ export const ui = {
         'index.got_to_about_me': 'Sobre mi',
         'ecommerce.title': 'Abre tu tienda',
         'ecommerce.sub': 'Vende tus productos',
-        'ecommerce.description': `Construye tu nueva tienda con la tecnología más reciente y rápida de Shopify Hydrogen, o vende tus productos en una tienda tradicional personalizable de WordPress con WooCommerce.`,
+        'ecommerce.description': `Construye tu nueva tienda con la tecnología más reciente y rápida de
+        <b>Shopify Hydrogen</b>, o vende tus productos en una tienda tradicional
+        personalizable de <b>WordPress con WooCommerce</b>.
+        ¡Juntos elegiremos la tecnología que mejor se adapte a tu negocio!`,
         'personal_web.title': 'Tu propia web',
         'personal_web.sub': 'Vende tu marca',
-        'personal_web.description': `Deja que tu sitio web hable de ti. Sitios web estáticos súper rápidos con visuales y contenido sorprendentes; Contenido personalizable con Sanity o WordPress.`,
-        'custom_dev.title': 'Software propio',
+        'personal_web.description': `Deja que tu sitio web hable de ti, de tu marca personal.
+        Sitios <b>web estáticos, súper rápidos</b> y con contenido y elementos
+        gráficos sorprendentes; todo ello personalizable con <b>Sanity o
+        WordPress.</b>`,
+        'custom_dev.title': 'Desarrollos a medida',
         'custom_dev.sub': 'Expande tu negocio',
-        'custom_dev.description': `Software personalizado que llevará tu negocio al siguiente nivel. Herramientas de backoffice creadas con PHP, herramientas de scraping con Python... o cualquier cosa que puedas imaginar.`
+        'custom_dev.description': `<b>Software personalizado</b> que llevará tu negocio al siguiente nivel.
+        Herramientas de BackOffice creadas con <b>PHP</b>, herramientas de
+        scraping con <b>Python</b>, o cualquier otro tipo de utilidad que te ayude a
+        expandir tu negocio.`
     },
 }

@@ -55,7 +55,7 @@ const { imageSrc } = getPortfolioFromId(portfolio.id);
       </p>
       <p>{portfolio.location}, {portfolio.year}</p>
 
-      <p>{portfolio.description}</p>
+      <p><Fragment set:html={portfolio.description} /></p>
 
       <p>
         URL: <a class="text-sky-500" href={portfolio.url} target="_blank"

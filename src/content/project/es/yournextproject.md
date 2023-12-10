@@ -6,10 +6,18 @@ image:
 title: "Tu próximo proyecto"
 location: "Tu localización"
 year: "Ahora mismo"
-platform: "La plataforma de tu elección"
+platform: "La plataforma que mejor se adapte a tu empresa o negocio"
 tech: "La última tecnología"
 url: "https://yournextproject.com"
 show_title: {portfolio: true, card: true}
 secondary_link: { text: "", href: ""}
-description:  Descubre excelentes oportunidades trabajando conmigo. Crea un nuevo sitio web personal para tu marca, una tienda en línea u cualquier otra solución que puedas imaginar utilizando la última tecnología disponible. Soluciones web rápidas y confiables para los problemas de la vida moderna. Preséntate, vende tus productos y deja que tu sitio web hable de ti.
+description:  "Descubre las oportunidades de trabajar conmigo:
+                <ul class='list-disc list-inside'>
+                  <li>Trato personal y cercano con comunicación permanente.</li>
+                  <li>Trabajo profesional, fiable y adatado tus necesidades</li>
+                  <li>Soluciones web rápidas, confiables y utilizando la última
+                  tecnología disponible.</li>
+                </ul>
+
+"
 ---
