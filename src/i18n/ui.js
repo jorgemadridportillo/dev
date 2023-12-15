@@ -43,6 +43,8 @@ export const ui = {
         'index.go_to_portfolio': 'Go to the portfolio',
         'index.go_to_contact': `Contact me`,
         'index.got_to_about_me': 'About me',
+        'index.contact_me': 'Contact me',
+        'index.see_portfolio': 'Check out my portfolio',
         'ecommerce.title': 'Open your store',
         'ecommernce.sub': 'Sell your products',
         'ecommerce.description': `Build your brand new store with the latest and fastes Shopify Hydrogen
@@ -93,6 +95,8 @@ export const ui = {
         'index.go_to_portfolio': 'Ir al portfolio',
         'index.go_to_contact': `Contáctame`,
         'index.got_to_about_me': 'Sobre mi',
+        'index.contact_me': 'Contáctame',
+        'index.see_portfolio': 'Ve a mi portfolio',
         'ecommerce.title': 'Abre tu tienda',
         'ecommerce.sub': 'Vende tus productos',
         'ecommerce.description': `Construye tu nueva tienda con la tecnología más reciente y rápida de
