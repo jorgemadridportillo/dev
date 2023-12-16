@@ -27,15 +27,19 @@ export const ui = {
         'footer.made_with': 'Made with',
         'index.title': 'Web Development',
         'index.subtitle': 'Software Solutions',
-        'index.description': `Reliable web development with care, attention and dedication.
-        Professional level work from a software engineer with years of
-        experience.`,
+        'index.description': `Reliable web development making a difference through care,
+        attention and dedication.
+        Professional and state of the art work from a software engineer
+        with years of experience and bilingual in Spanish and English.`,
         'index.get_in_touch': 'Get in touch',
-        'index.lets_talk': `let's talk about your project.`,
+        'index.lets_talk': `let's talk about your project and we will develop it
+        together.`,
         'index.dev_begins': 'Development begins',
-        'index.dev_begins_2': 'weekly delivers, periodic updates and communication.',
+        'index.dev_begins_2': `weekly deliveries, constant updates and
+        permanent communication.`,
         'index.delivery': 'Project delivery',
-        'index.delivery_2': 'revisions, fixes and polishes to the final product.',
+        'index.delivery_2': `open to polishing and revisions until the product
+        meets your expectations.`,
         'index.ecommerce': 'E-commerce',
         'index.personal_web': 'Personal websites',
         'index.custom_dev': 'Custom developments',
@@ -47,15 +51,20 @@ export const ui = {
         'index.see_portfolio': 'Check out my portfolio',
         'ecommerce.title': 'Open your store',
         'ecommernce.sub': 'Sell your products',
-        'ecommerce.description': `Build your brand new store with the latest and fastes Shopify Hydrogen
-        tech or sell your products in a tradition customizable Wordpress store
-        with Woocomerce.`,
+        'ecommerce.description': `Build your online store with the latest and fastest <b>Shopify Hydrogen</b> tech or
+        sell your products in a traditional customizable <b>WordPress</b> store with
+        <b>WooCommerce</b>. Together we will choose the technology that best suits your
+        business!`,
         'personal_web.title': 'Your own website',
         'personal_web.sub': 'Sell your brand',
-        'personal_web.description': `Let your website talk about yourself. Super fast static websites with amazing visuals and content; Customizable content with Sanity or wordpress. `,
+        'personal_web.description': `Let your website talk about yourself. <b>Super-fast static websites</b> with
+        outstanding visuals and content; Customizable content with <b>Sanity or
+        WordPress</b>.`,
         'custom_dev.title': 'Custom software',
         'custom_dev.sub': 'Expand your company',
-        'custom_dev.description': `Custom built software that will raise your business to the next level. Backoffice tools made with PHP, scrapping tools with Python...or anyting you can imagine.`
+        'custom_dev.description': `<b>Custom built software</b> that will raise your business to the next level.
+        Backoffice tools made with <b>PHP</b>, scrapping tools with <b>Python</b> or any other kind
+        of utility to help you expand your business.`
     },
     es: {
         'nav.contact': 'Contacto',

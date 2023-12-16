@@ -5,7 +5,7 @@ image:
   alt: "exfopino web"
 title: "Exfopino"
 location: "Pontevedra, Spain"
-year: "2020"
+year: "2023"
 platform: "Wordpress"
 tech: "Elementor"
 show_title: {portfolio: true, card: false}

@@ -7,7 +7,7 @@ title: "Don Bolsas"
 location: "Madrid, España"
 show_title: {portfolio: true, card: false}
 secondary_link: { text: "", href: ""}
-year: "2020"
+year: "2022"
 tech: "Liquid"
 platform: "Shopify"
 url: "https://donbolsas.com"
