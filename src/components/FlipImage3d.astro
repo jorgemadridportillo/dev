@@ -12,7 +12,9 @@ const { sub, title, description, imageSrc, alt } = Astro.props;
 import { Image } from "astro:assets";
 ---
 
-<div class="w-full h-auto bg-transparent cursor-pointer group perspective">
+<div
+  class="w-full h-auto bg-transparent cursor-pointer group perspective max-w-sm"
+>
   <div
     class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-500"
   >
@@ -30,9 +32,11 @@ import { Image } from "astro:assets";
       <div
         class="text-center flex flex-col items-center justify-evenly h-full text-gray-800 p-4"
       >
-        <h5 class="text-xl font-semibold sm:text-2xl">{title}</h5>
+        <h5 class="text-xl font-semibold sm:text-2xl lg:block md:hidden block">
+          {title}
+        </h5>
         <!-- <p class="my-2 text-sm">{sub}</p> -->
-        <p class="sm:text-md text-sm">
+        <p class="text-sm xl:text-lg">
           <Fragment set:html={description} />
         </p>
       </div>
